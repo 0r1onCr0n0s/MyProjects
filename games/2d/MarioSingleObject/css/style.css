@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*:not(i,span){
+    font-family: 'Roboto', sans-serif !important;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.game-board{
+    width: 100%;
+    height: 100vh;
+    border-bottom: 15px solid rgb(65, 160, 35);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #edf6ff);
+}
+
+.mario{
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    display: none;
+}
+
+.jump{
+    animation: mario-jump-animation 700ms ease-out;
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+    display: none;
+}
+
+.pipe2{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    display: none;
+    left: 120px;
+}
+.nuvem{
+    position: absolute;
+    top: 10px;
+    width: 300px;
+    
+}
+
+.ambiente{
+    display: none;
+}
+.jogar{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    width: 300px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.logo{
+    position: absolute;
+    top: 30%;
+    width: 300px;
+    left: 37.5%;
+    z-index: 0;
+}
+
+.pontos{
+    display: flex;
+    gap: 5px;
+    font-size: 40px;
+    color: rgb(65, 160, 35);
+    text-transform: uppercase;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.level{
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.pa{
+    font-size: 25px;
+}
+
+.pa2{
+    font-size: 15px;
+    
+}
+@keyframes pipe-animation{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes mario-jump-animation{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes nuvens-animation{
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
