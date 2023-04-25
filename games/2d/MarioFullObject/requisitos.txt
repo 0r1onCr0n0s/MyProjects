@@ -1,0 +1,16 @@
+#Jogo Mario
+mini-projetos - jogo de Mario com HTML, CSS e JS
+
+==================Briefing======================
+================================================
+
+Criar um jogo baseado no Super Mario
+
+* O jogador informa seu nome, que será salvo no localStorage.
+* O jogo precisa ter um butão de play para iniciar a execução.
+* O jogador deve usar as teclas ArrowUp ou space para fazer o Mario pular e/ou voar e assim desviar dos obstáculos
+ou pegar as moedas ou estrelas.
+* O jogo deve contar o tempo até que o jogador perca a partida.
+* Ao perder a partida deve ser exibida uma tela de game-over.
+* No final de jogo deve ser exibido um ranking com os melhores resultados de tempo e moedas coletadas.
+* A velocidade do Mario deve aumentar a cada instante de tempo
