@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        @keyframes obliquo{
+            0%{
+                bottom: -100px;
+                left: -100px;
+            }
+            15%{
+                bottom: 10%;
+                left: 10%;
+            }
+            30%{
+                bottom: 20%;
+                left: 20%;
+            }
+            60%{
+                bottom: 60%;
+                left: 60%;
+            }
+
+            80%{
+                bottom: 80%;
+                left: 80%;
+            }
+            100%{
+                bottom: 150%;
+                left: 100%;
+            }
+        }
+        .quadrado{
+            position: absolute;
+            border: 1px solid black;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            bottom: calc(100% - 200px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="quadrado">
+
+    </div>
+</body>
+</html>
